@@ -1,0 +1,120 @@
+Africa
+Euroe
+Antartica
+Asia(T)
+Bolivia
+Ecuador
+Chile(T)
+Peru
+Canada(T)
+USA
+Australia
+India
+Atacam desert
+Sahara desert
+Kufra, Libiya
+Mcmurdo, Antartica(T)
+Egypt
+Algeria
+Sudan(T)
+Libya
+Jerusalem
+Damascus(T)
+Jericho
+Athens
+Australia(T)
+South America
+Antartica
+Africa
+Argentina
+Brazil(T)
+Peru
+Columbia
+Kilimanjaro
+Mount Everest(T)
+Aconcagua
+Qogir
+Nauru
+Grenada
+Monaco
+Vatican City(T)
+Java trench
+Mariana trench(T)
+Tonga trench
+Eurasian basin
+Lebanon
+Egypt
+Moroco(T)
+Syria
+Paraguay
+Uruguay(T)
+Suriname
+Peru
+Australia
+Asia
+Antartica
+Afirca(T)
+Indian
+Pacific(T)
+Arctic
+Atlantic
+London
+Rome
+New Delhi 
+Istanbul(T)
+Mount Etna(T)
+Mount Yasur
+Mount Fuji
+Mount Olympus
+Thames
+Danube
+Seine(T)
+Elbe
+Amazon(T)
+Mississippi
+Yangtze
+Congo
+Bulgaria
+Slovenia
+Romania(T)
+Croatia
+Strait of Hormuz
+Strait of Magellan
+Strait of Gibraltar(T)
+Strait of Malacca
+China
+Russia(T)
+USA
+Canada
+Tay
+Bann
+Severn(T)
+Thames
+Perth
+Sydney(T)
+Melbourne 
+Brisbane
+Mount Steele
+Mount Rushmore
+Denali(T)
+King Peak
+Africa
+North America
+Antartica(T)
+Asia
+Sahara(T)
+Gobi
+Navajo
+Atakama
+Nile(T)
+Danube
+Mississippi
+Vardar
+Bern(T)
+Zurich
+Lozana
+Berlin
+Perth
+Melbourne 
+Sydney 
+Canbera(T)

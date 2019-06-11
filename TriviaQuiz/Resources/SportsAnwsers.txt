@@ -1,0 +1,120 @@
+New York Knicks(T)
+New Orleans Pelicans
+Los Angeles Lakers
+Atlanta Hawks
+Chelsea
+Real Madrid(T)
+Barcelona
+Manchester City
+1
+4
+6(T)
+0
+Michael Phleps
+Usain Bolt(t)
+Goran Pandev
+Asafa Powel
+Ferrari(T)
+Mercedes
+Lotus
+Red Bull
+Chelsea
+Arsenal(T)
+Liverpool
+Macnhester United
+Germany
+Italy
+Brazil(T)
+France
+Matt Buiondi
+Mark Spitz
+Ian Thorpe
+Michale Phelps(T)
+Kobe Bryant
+Michale Jordan
+Wilt Chamberlain(T)
+Lebron James
+Vardar(T)
+Metalurg
+Eurofarm Rabotnik
+Pelister
+65
+43
+82(T)
+71
+Russia(T)
+Canada
+USA
+Finland
+France
+Germany
+Portugal(T)
+Brazil
+Cow hide
+Pig skin(T)
+Crocodile leather
+Goat hide
+Sumo Wrestling(T)
+Judo
+Karate
+Football
+Macedonia
+Greece(T)
+France
+Italy
+Madisson Square Garden
+Standford Bridge
+Etihad Stadium
+Camp Nou(T)
+Red devils(T)
+Belgian devils
+Red belgian devils
+Red belgians
+Rugby
+Waterpolo
+Tennis(T)
+Football
+4
+5
+6(T)
+7
+one(T)
+two 
+none
+four
+50m(T)
+60m
+40m
+45m
+Los Angeles Lakers
+New York Knicks
+Boston Celtics(T)
+Golden State Warriors
+Lebron James
+Michael Jordan
+Kobe Bryant
+Bill Russel(T)
+45min
+80min(T)
+60min
+50min
+1992
+1996
+1884
+1986
+one
+two(T) 
+three 
+four
+Pilates(T)
+Yoga
+Bodybuilding
+Football
+Pink
+Blue
+Black(T)
+Red
+Barcelona
+Los Angeles
+Paris
+Atlanta(T)
