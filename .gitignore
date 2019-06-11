@@ -1,0 +1,6 @@
+# Build Folders
+TriviaQuiz/bin
+TriviaQuiz/obj
+
+# Ignore Visual Studio temporary files
+TriviaQuiz/.vs
