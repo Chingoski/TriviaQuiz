@@ -44,8 +44,8 @@ namespace TriviaQuiz
         {
 
             int answerIndex = 0;
-            string[] questions = QuestionsLocation.Split('\n');
-            string[] anwsers = AnswerLocation.Split('\n');
+            string[] questions = QuestionsLocation.Split(new []{'\n'},StringSplitOptions.RemoveEmptyEntries);
+            string[] anwsers = AnswerLocation.Split(new []{'\n'},StringSplitOptions.RemoveEmptyEntries);
                 for (int x = 0; x < questions.Length; x++)
             {
                 Question tmp = new Question
