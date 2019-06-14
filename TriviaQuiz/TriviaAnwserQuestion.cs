@@ -19,7 +19,7 @@ namespace TriviaQuiz
         {
             InitializeComponent();
             Current = new Question();
-            
+            Icon = Icon.FromHandle(Resources.trivia_quiz_logo.GetHicon());
         }
 
         private void TriviaAnwserQuestion_Load(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace TriviaQuiz
             SetBackgorundImage();
             Icon =Icon.FromHandle(Resources.trivia_quiz_logo.GetHicon());
             this.Current = TriviaNewGame.Current;
-            tbQuestion.Text = Current.QuestionName;
+            label1.Text = Current.QuestionName;
             Answer1.Text = Current.Answers.AllAnswers[0];
             Answer2.Text = Current.Answers.AllAnswers[1];
             Answer3.Text = Current.Answers.AllAnswers[2];
@@ -90,9 +90,18 @@ namespace TriviaQuiz
             }
             else if (TriviaNewGame.CurrentCategory == "PopCulture")
             {
-                this.BackgroundImage = Resources.popculture;
+                this.BackgroundImage = Resources.cultr;
                 Text = TriviaNewGame.CurrentCategory;
             }
+        }
+    private void Answer4_MouseEnter(object sender, EventArgs e)
+    {
+        Cursor = Cursors.Hand;
+    }
+
+        private void Answer4_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
         }
     }
 }

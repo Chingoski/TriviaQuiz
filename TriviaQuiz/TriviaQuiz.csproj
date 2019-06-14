@@ -48,6 +48,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Answer.cs" />
+    <Compile Include="EndMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndMessage.Designer.cs">
+      <DependentUpon>EndMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions.Designer.cs">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Question.cs" />
     <Compile Include="TriviaAnwserQuestion.cs">
       <SubType>Form</SubType>
@@ -69,6 +81,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EndMessage.resx">
+      <DependentUpon>EndMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions.resx">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -81,6 +99,9 @@
     </Compile>
     <EmbeddedResource Include="TriviaAnwserQuestion.resx">
       <DependentUpon>TriviaAnwserQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriviaHome.resx">
+      <DependentUpon>TriviaHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TriviaNewGame.resx">
       <DependentUpon>TriviaNewGame.cs</DependentUpon>
@@ -123,13 +144,7 @@
     <None Include="Resources\PopCultureAnswers.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Webp.net-resizeimage.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Arrow-right.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\popculture.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\science.jpg" />
@@ -144,10 +159,22 @@
     <None Include="Resources\trivia-quiz-logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bakcground.jpg" />
+    <None Include="Resources\small-clipart-tiny-17.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\small-clipart-tiny-17.png" />
+    <None Include="Resources\Site-Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J4GYui-home-round-button-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JoshuaBudich-18x24-Deadpool_1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage_FINAL.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,7 +16,7 @@ namespace TriviaQuiz
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TriviaNewGame());
+            Application.Run(new TriviaHome());
         }
     }
 }

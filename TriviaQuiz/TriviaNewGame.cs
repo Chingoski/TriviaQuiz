@@ -133,7 +133,7 @@ namespace TriviaQuiz
             }
             else if (CurrentCategory == "PopCulture")
             {
-                Current = SportQuestions[random.Next(SportsLeft)];
+                Current = PopCultureQuestions[random.Next(PopcultureLeft)];
                 PopCultureQuestions.Remove(Current);
                 PopcultureLeft--;
             }
@@ -172,26 +172,29 @@ namespace TriviaQuiz
         {
             if (Points == 30)
             {
-                MessageBox.Show("You have won the game");
-                this.Close();
-                new TriviaHome().ShowDialog();
+                Form form = new EndMessage();
+                Hide();
+                if (form.ShowDialog() == DialogResult.Cancel)
+                    Close();
             }
 
             if (Lives == 0)
             {
-                MessageBox.Show("You have lost the game. You have recieved "+Points.ToString()+" Points.");
-                this.Close();
-                new TriviaHome().ShowDialog();
+                Form form = new EndMessage();
+                Hide();
+                if (form.ShowDialog() == DialogResult.Cancel)
+                    Close();
             }
         }
         private void btnNewGame_Click(object sender, EventArgs e)
         {
-            NewGame();
+           Close();
         }
         private void btnRotate_Click(object sender, EventArgs e)
         {
             timerValue = random.Next(75);
             timerRotate.Enabled = true;
+            btnNewGame.Enabled = false;
         }
         public Bitmap RotateImage(Bitmap b, float angle)
         {
@@ -259,18 +262,27 @@ namespace TriviaQuiz
                     resetWheel();
                     btnRotate_Click(null,null);
                 }
-                
 
+                btnNewGame.Enabled = true;
 
             }
         }
         public void resetWheel()
         {
-            Bitmap rotatedImage = new Bitmap(Properties.Resources.Webp_net_resizeimage);
+            Bitmap rotatedImage = new Bitmap(Properties.Resources.Webp_net_resizeimage_FINAL);
             Graphics g = Graphics.FromImage(rotatedImage);
             pictureBox1.Image = rotatedImage;
         }
 
-     
+
+        private void BtnRotate_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void BtnRotate_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
+        }
     }
 }

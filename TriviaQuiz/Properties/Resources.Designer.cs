@@ -19,7 +19,7 @@ namespace TriviaQuiz.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -73,9 +73,19 @@ namespace TriviaQuiz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bakcground {
+        internal static System.Drawing.Bitmap board {
             get {
-                object obj = ResourceManager.GetObject("bakcground", resourceCulture);
+                object obj = ResourceManager.GetObject("board", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cultr {
+            get {
+                object obj = ResourceManager.GetObject("cultr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -168,9 +178,9 @@ namespace TriviaQuiz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap popculture {
+        internal static System.Drawing.Bitmap J4GYui_home_round_button_icon_png {
             get {
-                object obj = ResourceManager.GetObject("popculture", resourceCulture);
+                object obj = ResourceManager.GetObject("J4GYui_home_round_button_icon_png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -339,6 +349,16 @@ namespace TriviaQuiz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Site_Background {
+            get {
+                object obj = ResourceManager.GetObject("Site_Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap small_clipart_tiny_17 {
             get {
                 object obj = ResourceManager.GetObject("small_clipart_tiny_17", resourceCulture);
@@ -370,7 +390,7 @@ namespace TriviaQuiz.Properties {
         ///6(T)
         ///0
         ///Michael Phleps
-        ///Usain Bolt(t)
+        ///Usain Bolt(T)
         ///Goran Pandev
         ///Asafa Powel
         ///Ferrari(T)
@@ -438,9 +458,9 @@ namespace TriviaQuiz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Webp_net_resizeimage {
+        internal static System.Drawing.Bitmap Webp_net_resizeimage_FINAL {
             get {
-                object obj = ResourceManager.GetObject("Webp_net_resizeimage", resourceCulture);
+                object obj = ResourceManager.GetObject("Webp_net_resizeimage_FINAL", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -117,62 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Arrow_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Arrow-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="geography" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\geography.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Geography_Anwsers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Geography-Anwsers.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Geography_Questions" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Geography-Questions.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="PopCultureAnswers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PopCultureAnswers.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="PopCultureQuestions" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PopCultureQuestions.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="science" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\science.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Science_Anwsers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Science-Anwsers.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Science_Questions" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Science-Questions.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="sport" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sport.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SportsAnwsers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SportsAnwsers.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="SportsQuestions" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SportsQuestions.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="trivia_quiz_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trivia-quiz-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="small_clipart_tiny_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\small-clipart-tiny-17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Site_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Site-Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="J4GYui_home_round_button_icon_png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\J4GYui-home-round-button-icon-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="board" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\board.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cultr" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\JoshuaBudich-18x24-Deadpool_1024x1024.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Webp_net_resizeimage_FINAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Webp.net-resizeimage_FINAL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Test your knowledge. After clicking on new game, you will start your journey. After spinning the wheel you will be given a question from one of the four subjects. The rules are simple: You have 3 lives, if your answer is incorrect, you lose a life or else you get a point. By answering 30 questions correctly, you achieved the status of Albert Einstein. </value>
   </data>
 </root>
