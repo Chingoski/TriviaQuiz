@@ -40,15 +40,13 @@ namespace TriviaQuiz
             NewGame();
 
         }
-        public void FillQuestions(string QuestionsLocation , string AnswerLocation)
+        public void FillQuestions(string QuestionsLocation , string AnswerLocation, string tema)
         {
 
             int answerIndex = 0;
-            string[] questions =
-                File.ReadAllLines(QuestionsLocation);
-            string[] anwsers =
-                File.ReadAllLines(AnswerLocation);
-            for (int x = 0; x < questions.Length; x++)
+            string[] questions = QuestionsLocation.Split('\n');
+            string[] anwsers = AnswerLocation.Split('\n');
+                for (int x = 0; x < questions.Length; x++)
             {
                 Question tmp = new Question
                 {
@@ -61,19 +59,19 @@ namespace TriviaQuiz
                 tmpa.AllAnswers.Add(anwsers[answerIndex + 3]);
                 tmpa.Correct();
                 tmp.Answers = tmpa;
-                if (QuestionsLocation.Contains("Geography"))
+                if (tema.Equals("Geography"))
                 {
                     GeographyQuestions.Add(tmp);
                 }
-                else if (QuestionsLocation.Contains("Sports"))
+                else if (tema.Equals("Sports"))
                 {
                     SportQuestions.Add(tmp);
                 }
-                else if (QuestionsLocation.Contains("Science"))
+                else if (tema.Equals("Science"))
                 {
                     ScienceQuestions.Add(tmp);
                 }
-                else if (QuestionsLocation.Contains("PopCulture"))
+                else if (tema=="PopCulture")
                 {
                     PopCultureQuestions.Add(tmp);
                 }
@@ -99,10 +97,10 @@ namespace TriviaQuiz
             ScienceLeft = 30;
             PopcultureLeft = 30;
             random = new Random();
-            FillQuestions(@"..\..\Resources\PopCultureQuestions.txt", @"..\..\Resources\PopCultureAnswers.txt");
-            FillQuestions(@"..\..\Resources\Geography-Questions.txt", @"..\..\Resources\Geography-Anwsers.txt");
-            FillQuestions(@"..\..\Resources\Science-Questions.txt", @"..\..\Resources\Science-Anwsers.txt");
-            FillQuestions(@"..\..\Resources\SportsQuestions.txt", @"..\..\Resources\SportsAnwsers.txt");
+            FillQuestions(Resources.Geography_Questions , Resources.Geography_Anwsers, "Geography");
+            FillQuestions(Resources.PopCultureQuestions, Resources.PopCultureAnswers, "PopCulture");
+            FillQuestions(Resources.Science_Questions, Resources.Science_Anwsers, "Science");
+            FillQuestions(Resources.SportsQuestions, Resources.SportsAnwsers, "Sports");
             timerRotate.Enabled = false;
             label4.Text = Points.ToString();
             
@@ -194,7 +192,6 @@ namespace TriviaQuiz
         {
             timerValue = random.Next(75);
             timerRotate.Enabled = true;
-            btnNewGame.Enabled = false;
         }
         public Bitmap RotateImage(Bitmap b, float angle)
         {
@@ -209,6 +206,7 @@ namespace TriviaQuiz
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
+            btnNewGame.Enabled = false;
             timerValue--;
             if (timerValue <= 0)
             {
