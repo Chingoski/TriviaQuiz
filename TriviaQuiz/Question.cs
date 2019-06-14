@@ -10,6 +10,5 @@ namespace TriviaQuiz
     {
         public string QuestionName { get; set; }
         public Answer Answers { get; set; }
-
     }
 }

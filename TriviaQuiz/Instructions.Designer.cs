@@ -60,7 +60,6 @@
             this.label1.Size = new System.Drawing.Size(273, 48);
             this.label1.TabIndex = 1;
             this.label1.Text = "HOW TO PLAY";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 

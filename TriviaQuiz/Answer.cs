@@ -19,11 +19,10 @@ namespace TriviaQuiz
 
         public void Correct()
         {
-           for(int i = 0 ; i < AllAnswers.Count ; i++)
+            for (int i = 0 ; i < AllAnswers.Count ; i++)
             {
                 if (AllAnswers[i].Contains("(T)"))
                 {
-                  
                     var tmp = AllAnswers[i].Substring(0, AllAnswers[i].Length - 4);
                     AllAnswers[i] = tmp;
                     CorrectAnswer = tmp;

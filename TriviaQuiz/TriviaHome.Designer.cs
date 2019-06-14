@@ -106,7 +106,6 @@
             this.Name = "TriviaHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trivia Quiz";
-            this.Load += new System.EventHandler(this.TriviaHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

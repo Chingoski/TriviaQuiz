@@ -38,25 +38,24 @@ namespace TriviaQuiz
             Icon = Icon.FromHandle(Resources.trivia_quiz_logo.GetHicon());
             InitializeComponent();
             NewGame();
-
         }
+
         public void FillQuestions(string QuestionsLocation , string AnswerLocation, string tema)
         {
-
             int answerIndex = 0;
-            string[] questions = QuestionsLocation.Split(new []{'\n'},StringSplitOptions.RemoveEmptyEntries);
-            string[] anwsers = AnswerLocation.Split(new []{'\n'},StringSplitOptions.RemoveEmptyEntries);
-                for (int x = 0; x < questions.Length; x++)
+            string[] questions = QuestionsLocation.Split(new []{'\n'}, StringSplitOptions.RemoveEmptyEntries);
+            string[] answers = AnswerLocation.Split(new []{'\n'}, StringSplitOptions.RemoveEmptyEntries);
+            for (int x = 0; x < questions.Length; x++)
             {
                 Question tmp = new Question
                 {
                     QuestionName = questions[x]
                 };
                 Answer tmpa = new Answer();
-                tmpa.AllAnswers.Add(anwsers[answerIndex]);
-                tmpa.AllAnswers.Add(anwsers[answerIndex + 1]);
-                tmpa.AllAnswers.Add(anwsers[answerIndex + 2]);
-                tmpa.AllAnswers.Add(anwsers[answerIndex + 3]);
+                tmpa.AllAnswers.Add(answers[answerIndex]);
+                tmpa.AllAnswers.Add(answers[answerIndex + 1]);
+                tmpa.AllAnswers.Add(answers[answerIndex + 2]);
+                tmpa.AllAnswers.Add(answers[answerIndex + 3]);
                 tmpa.Correct();
                 tmp.Answers = tmpa;
                 if (tema.Equals("Geography"))
@@ -71,19 +70,14 @@ namespace TriviaQuiz
                 {
                     ScienceQuestions.Add(tmp);
                 }
-                else if (tema=="PopCulture")
+                else if (tema.Equals("PopCulture"))
                 {
                     PopCultureQuestions.Add(tmp);
                 }
-
                 answerIndex += 4;
-           
             }
-
-           
-
-
         }
+
         public void NewGame()
         {
             GeographyQuestions = new List<Question>();
@@ -103,8 +97,8 @@ namespace TriviaQuiz
             FillQuestions(Resources.SportsQuestions, Resources.SportsAnwsers, "Sports");
             timerRotate.Enabled = false;
             label4.Text = Points.ToString();
-            
         }
+
         public void GetQuestion()
         {
             if (CurrentCategory=="Geography")
@@ -112,7 +106,6 @@ namespace TriviaQuiz
                 Current = GeographyQuestions[random.Next(GeograpyLeft)];
                 GeographyQuestions.Remove(Current);
                 GeograpyLeft--;
-               
             }
 
             else if (CurrentCategory == "Science")
@@ -127,8 +120,8 @@ namespace TriviaQuiz
                 Current = SportQuestions[random.Next(SportsLeft)];
                 SportQuestions.Remove(Current);
                 SportsLeft--;
-             
             }
+
             else if (CurrentCategory == "PopCulture")
             {
                 Current = PopCultureQuestions[random.Next(PopcultureLeft)];
@@ -147,24 +140,16 @@ namespace TriviaQuiz
             label4.Text = Points.ToString();
             CheckLives();
             GetStatusOfGame();
-           
-            
         }
 
         public void CheckLives()
         {
             if (Lives == 2)
-            {
                 lives3.Image = null;
-            }
             if (Lives == 1)
-            {
                 lives2.Image = null;
-            }
             if (Lives == 0)
-            {
                 lives1.Image = null;
-            }
         }
         public void GetStatusOfGame()
         {
@@ -184,15 +169,18 @@ namespace TriviaQuiz
                     Close();
             }
         }
+
         private void btnNewGame_Click(object sender, EventArgs e)
         {
            Close();
         }
+
         private void btnRotate_Click(object sender, EventArgs e)
         {
             timerValue = random.Next(75);
             timerRotate.Enabled = true;
         }
+
         public Bitmap RotateImage(Bitmap b, float angle)
         {
             Bitmap rotatedImage = new Bitmap(b.Width, b.Height);
@@ -204,6 +192,7 @@ namespace TriviaQuiz
             g.DrawImage(b, 0, 0, b.Width, b.Height);
             return rotatedImage;
         }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             btnNewGame.Enabled = false;
@@ -221,7 +210,6 @@ namespace TriviaQuiz
 
             if (!timerRotate.Enabled)
             {
-
                 Bitmap b = new Bitmap(pictureBox1.Image);
                 Point location = new Point((b.Width) / 2 - 112, (b.Height) / 2 - 20);
                 Color c = b.GetPixel(location.X, location.Y);
@@ -244,7 +232,6 @@ namespace TriviaQuiz
                     CurrentCategory = "PopCulture";
                     GetQuestion();
                     resetWheel();
-
                 }
 
                 else if (c == Color.FromArgb(255, 255, 4, 0))
@@ -252,7 +239,6 @@ namespace TriviaQuiz
                     CurrentCategory = "Science";
                     GetQuestion();
                     resetWheel();
-
                 }
                 
                 else
@@ -260,18 +246,16 @@ namespace TriviaQuiz
                     resetWheel();
                     btnRotate_Click(null,null);
                 }
-
                 btnNewGame.Enabled = true;
-
             }
         }
+
         public void resetWheel()
         {
             Bitmap rotatedImage = new Bitmap(Properties.Resources.Webp_net_resizeimage_FINAL);
             Graphics g = Graphics.FromImage(rotatedImage);
             pictureBox1.Image = rotatedImage;
         }
-
 
         private void BtnRotate_MouseEnter(object sender, EventArgs e)
         {

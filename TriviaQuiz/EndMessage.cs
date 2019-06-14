@@ -21,14 +21,9 @@ namespace TriviaQuiz
             Points = TriviaNewGame.Points;
             lblPoints.Text = Points.ToString();
             if (Points < 30)
-            {
-                lblMessage.Text =
-                    "So close! You have almost recieved the status of Albert Einstein. Test your wisdom again.";
-            }
+                lblMessage.Text = "So close! You have almost received the status of Albert Einstein. Test your wisdom again.";
             else
-            {
-                lblMessage.Text = "Congratulations! You have recieved the status of Albert Einstein. If you want test your wisdom again.";
-            }
+                lblMessage.Text = "Congratulations! You have received the status of Albert Einstein. If you want test your wisdom again.";
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)

@@ -11,7 +11,6 @@ using TriviaQuiz.Properties;
 
 namespace TriviaQuiz
 {
-  
     public partial class TriviaAnwserQuestion : Form
     {
         private Question Current;
@@ -24,9 +23,9 @@ namespace TriviaQuiz
 
         private void TriviaAnwserQuestion_Load(object sender, EventArgs e)
         {
-            SetBackgorundImage();
-            Icon =Icon.FromHandle(Resources.trivia_quiz_logo.GetHicon());
-            this.Current = TriviaNewGame.Current;
+            SetBackgroundImage();
+            Icon = Icon.FromHandle(Resources.trivia_quiz_logo.GetHicon());
+            Current = TriviaNewGame.Current;
             label1.Text = Current.QuestionName;
             Answer1.Text = Current.Answers.AllAnswers[0];
             Answer2.Text = Current.Answers.AllAnswers[1];
@@ -39,39 +38,36 @@ namespace TriviaQuiz
             return answer == Current.Answers.CorrectAnswer;
         }
 
-        public void CalcualatePoints(string answer)
+        public void CalculatePoints(string answer)
         {
             if (isCorrect(answer))
-                TriviaNewGame.Points ++ ;
+                TriviaNewGame.Points++;
             else
                 TriviaNewGame.Lives--;
-            this.DialogResult = DialogResult.Cancel;
-
-
-
+            DialogResult = DialogResult.Cancel;
         }
 
         private void Answer1_Click(object sender, EventArgs e)
         {
-            CalcualatePoints(Answer1.Text);
+            CalculatePoints(Answer1.Text);
         }
 
         private void Answer2_Click(object sender, EventArgs e)
         {
-            CalcualatePoints(Answer2.Text);
+            CalculatePoints(Answer2.Text);
         }
 
         private void Answer3_Click(object sender, EventArgs e)
         {
-            CalcualatePoints(Answer3.Text);
+            CalculatePoints(Answer3.Text);
         }
 
         private void Answer4_Click(object sender, EventArgs e)
         {
-            CalcualatePoints(Answer4.Text);
+            CalculatePoints(Answer4.Text);
         }
 
-        public void SetBackgorundImage()
+        public void SetBackgroundImage()
         {
             if (TriviaNewGame.CurrentCategory == "Geography")
             {
@@ -94,10 +90,11 @@ namespace TriviaQuiz
                 Text = TriviaNewGame.CurrentCategory;
             }
         }
-    private void Answer4_MouseEnter(object sender, EventArgs e)
-    {
-        Cursor = Cursors.Hand;
-    }
+
+        private void Answer4_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
 
         private void Answer4_MouseLeave(object sender, EventArgs e)
         {

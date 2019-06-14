@@ -19,11 +19,6 @@ namespace TriviaQuiz
             Icon = Icon.FromHandle(Resources.trivia_quiz_logo.GetHicon());
         }
 
-        private void TriviaHome_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnNewGame_Click(object sender, EventArgs e)
         {
             Form form = new TriviaNewGame();
@@ -44,7 +39,6 @@ namespace TriviaQuiz
         {
             Close();
         }
-
 
         private void BtnInstructions_MouseEnter(object sender, EventArgs e)
         {

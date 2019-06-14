@@ -19,15 +19,11 @@ namespace TriviaQuiz
             Icon = Icon.FromHandle(Resources.trivia_quiz_logo.GetHicon());
         }
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             Close();
         }
+
         private void PictureBox1_MouseEnter(object sender, EventArgs e)
         {
             Cursor = Cursors.Hand;
