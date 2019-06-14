@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -41,7 +42,6 @@ namespace TriviaQuiz
         }
         public void FillQuestions(string QuestionsLocation , string AnswerLocation)
         {
-
 
             int answerIndex = 0;
             string[] questions =
@@ -79,6 +79,7 @@ namespace TriviaQuiz
                 }
 
                 answerIndex += 4;
+           
             }
 
            
@@ -98,10 +99,10 @@ namespace TriviaQuiz
             ScienceLeft = 30;
             PopcultureLeft = 30;
             random = new Random();
-            FillQuestions(@"C:\Users\Nikola\Downloads\repos-2\repos\TriviaQuiz\Resources\PopCultureQuestions.txt", @"C:\Users\Nikola\Downloads\repos-2\repos\TriviaQuiz\Resources\PopCultureAnswers.txt");
-            FillQuestions(@"C:\Users\Nikola\Downloads\repos-2\repos\TriviaQuiz\Resources\Geography-Questions.txt", @"C:\Users\Nikola\Downloads\repos-2\repos\TriviaQuiz\Resources\Geography-Anwsers.txt");
-            FillQuestions(@"C:\Users\Nikola\Downloads\repos-2\repos\TriviaQuiz\Resources\Science-Questions.txt", @"C:\Users\Nikola\Downloads\repos-2\repos\TriviaQuiz\Resources\Science-Anwsers.txt");
-            FillQuestions(@"C:\Users\Nikola\Downloads\repos-2\repos\TriviaQuiz\Resources\SportsQuestions.txt", @"C:\Users\Nikola\Downloads\repos-2\repos\TriviaQuiz\Resources\SportsAnwsers.txt");
+            FillQuestions(@"..\..\Resources\PopCultureQuestions.txt", @"..\..\Resources\PopCultureAnswers.txt");
+            FillQuestions(@"..\..\Resources\Geography-Questions.txt", @"..\..\Resources\Geography-Anwsers.txt");
+            FillQuestions(@"..\..\Resources\Science-Questions.txt", @"..\..\Resources\Science-Anwsers.txt");
+            FillQuestions(@"..\..\Resources\SportsQuestions.txt", @"..\..\Resources\SportsAnwsers.txt");
             timerRotate.Enabled = false;
             label4.Text = Points.ToString();
             
@@ -183,13 +184,12 @@ namespace TriviaQuiz
                 new TriviaHome().ShowDialog();
             }
         }
-        private void button5_Click(object sender, EventArgs e)
+        private void btnNewGame_Click(object sender, EventArgs e)
         {
             NewGame();
         }
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnRotate_Click(object sender, EventArgs e)
         {
-
             timerValue = random.Next(75);
             timerRotate.Enabled = true;
         }
@@ -201,8 +201,6 @@ namespace TriviaQuiz
             g.TranslateTransform((float)b.Width / 2, (float)b.Height / 2);
             g.RotateTransform(angle);
             g.TranslateTransform(-(float)b.Width / 2, -(float)b.Height / 2);
-            //            g.DrawImage(b, new Point(0, 0));
-
             g.DrawImage(b, 0, 0, b.Width, b.Height);
             return rotatedImage;
         }
@@ -259,7 +257,7 @@ namespace TriviaQuiz
                 else
                 {
                     resetWheel();
-                    button1_Click_1(null,null);
+                    btnRotate_Click(null,null);
                 }
                 
 

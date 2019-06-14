@@ -55,7 +55,7 @@
             this.btnNewGame.TabIndex = 5;
             this.btnNewGame.Text = "New Game";
             this.btnNewGame.UseVisualStyleBackColor = true;
-            this.btnNewGame.Click += new System.EventHandler(this.button5_Click);
+            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
             // 
             // label2
             // 
@@ -99,7 +99,7 @@
             this.btnRotate.TabIndex = 10;
             this.btnRotate.Text = "Rotate";
             this.btnRotate.UseVisualStyleBackColor = true;
-            this.btnRotate.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnRotate.Click += new System.EventHandler(this.btnRotate_Click);
             // 
             // label1
             // 
