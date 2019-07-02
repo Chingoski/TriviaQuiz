@@ -1,0 +1,120 @@
+Amazon(T)
+eBay
+Overstock
+Shopify
+Four Years
+Year(T)
+Two Years
+Eight Years
+1998
+1999
+2000(T)
+2001
+Hard Disk Drive
+Central Processing Unit
+Graphics Processing Unit
+Motherboard(T)
+C#(T)
+Java
+C++
+Objective-C
+Paint.NET
+Inkscape(T)
+GIMP
+Adobe Photoshop
+Taiwan(T)
+United States
+Germany
+China 
+The Only Router
+The Orange Router
+The Onion Router(T)
+The Ominous Router
+December 17, 1996
+November 12, 1990
+November 24, 1995
+December 20, 1990(T)
+Content Distribution Network
+Content Delivery Network(T)
+Computational Data Network
+Compressed Data Networ
+Video Card(T)
+Hard Drive
+Processor
+Power Supply
+C#
+Python
+PHP
+JavaScript(T)
+Neptune
+Whistler
+Luna(T)
+Bliss
+console.log(Hello World)
+print('Hello World&quot')(T)
+echo Hello World,
+printf(Hello World)
+<marquee></marquee>(T)
+<scroll></scroll>
+<move><move>
+<slide></slide?>
+static
+absolute
+center(T)
+relative
+Common Language Input
+Command Line Interface(T)
+Control Line Interface
+Common Language Interface
+Liquid Crystal Display(T)
+Language Control Design
+Last Common Difference
+Long Continuous Design
+Windows
+Linux
+OS/2
+Mac OS(T)
+PC-9801
+FM-7(T)
+Xmillennium
+MSX
+Argentina
+Australia
+Angola
+Austria(T)
+Motherboard
+Graphics Processing Unit
+Central Processing Unit(T)
+Keyboard
+Gaming Processor Unit
+Graphics Processing Unit(T)
+Graphite Producing Unit
+Graphical Proprietary Unit
+Motorola 68000(T)
+Zilog Z80
+Yamaha YM2612
+Intel 8088
+Steve Jobs
+Ronald Wayne
+Jonathan Ive(T)
+Steve Wozniak
+2013
+2009
+2011
+2016(T)
+Mail Internet Mail Exchange
+Multipurpose Internet Mail Extensions(T)
+Multipurpose Interleave Mail Exchange
+Mail Interleave Method Exchange
+Hewlett-Packard(T)
+Howard Packmann
+Husker-Pollosk
+Hellman-Pohl
+100
+150
+200(T)
+600
+Overriding
+Abstracting
+Overloading(T)
+Inheriting

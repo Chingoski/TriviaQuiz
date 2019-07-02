@@ -89,6 +89,11 @@ namespace TriviaQuiz
                 this.BackgroundImage = Resources.cultr;
                 Text = TriviaNewGame.CurrentCategory;
             }
+            else if (TriviaNewGame.CurrentCategory == "ComputerScience")
+            {
+                this.BackgroundImage = Resources.iStock_636447976;
+                Text = TriviaNewGame.CurrentCategory;
+            }
         }
 
         private void Answer4_MouseEnter(object sender, EventArgs e)

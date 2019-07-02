@@ -81,6 +81,67 @@ namespace TriviaQuiz.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Amazon(T)
+        ///eBay
+        ///Overstock
+        ///Shopify
+        ///Four Years
+        ///Year(T)
+        ///Two Years
+        ///Eight Years
+        ///1998
+        ///1999
+        ///2000(T)
+        ///2001
+        ///Hard Disk Drive
+        ///Central Processing Unit
+        ///Graphics Processing Unit
+        ///Motherboard(T)
+        ///C#(T)
+        ///Java
+        ///C++
+        ///Objective-C
+        ///Paint.NET
+        ///Inkscape(T)
+        ///GIMP
+        ///Adobe Photoshop
+        ///Taiwan(T)
+        ///United States
+        ///Germany
+        ///China 
+        ///The Only Router
+        ///The Orange Router
+        ///The Onion Router(T)
+        ///The Ominous Router
+        ///December 17, 1996
+        ///November 12, 1990
+        ///November 24, 1995
+        ///December 20, 1990(T)
+        ///Content Distribution Network
+        ///Content Deli [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ComputerScienceAnswers {
+            get {
+                return ResourceManager.GetString("ComputerScienceAnswers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What was William Frederick Cody better known as?
+        ///Moore&apos;s law originally stated that the number of transistors on a microprocessor chip would double every...
+        ///When was the programming language C# released?
+        ///On which computer hardware device is the BIOS chip located?
+        ///Which of the following languages is used as a scripting language in the Unity 3D game engine?
+        ///All of the following programs are classified as raster graphics editors EXCEPT:
+        ///The computer OEM manufacturer Clevo, known for its Sager notebook li [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ComputerScienceQuestions {
+            get {
+                return ResourceManager.GetString("ComputerScienceQuestions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap cultr {
@@ -172,6 +233,16 @@ namespace TriviaQuiz.Properties {
         internal static string Geography_Questions {
             get {
                 return ResourceManager.GetString("Geography_Questions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iStock_636447976 {
+            get {
+                object obj = ResourceManager.GetObject("iStock_636447976", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

@@ -60,6 +60,12 @@
     <Compile Include="Instructions.Designer.cs">
       <DependentUpon>Instructions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Joker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joker.Designer.cs">
+      <DependentUpon>Joker.cs</DependentUpon>
+    </Compile>
     <Compile Include="Question.cs" />
     <Compile Include="TriviaAnwserQuestion.cs">
       <SubType>Form</SubType>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Instructions.resx">
       <DependentUpon>Instructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joker.resx">
+      <DependentUpon>Joker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -175,6 +184,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Webp.net-resizeimage_FINAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ComputerScienceAnswers.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ComputerScienceQuestions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iStock-636447976.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
