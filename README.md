@@ -14,6 +14,7 @@ Trivia Quiz is a quiz game in which the player will be challenged to test his kn
 - [Object Classes](#object-classes)
 - [Functionality](#functionality)
 - [Instructions](#instructions)
+- [Used Resources and Literature](#used-resources-and-literature)
 
 
 # General Information
@@ -180,7 +181,7 @@ Here the user has 3 options. On cliking exit he will exit the apllication. The '
 
  Or if the user chooses to start a new game he will be redirected to this window. In the center of the screen we have the wheel , on the far right corner the ammount of points and on the far left we have the number of remaining lives. After clicking on Rotate the wheel will spin and after the annimation stops you will be redirected to one of the 6 possible outcomes. 1 is a joker where you select your prefferd question category and the other one is a form where you will answer a question.
   
- [![N|Solid](https://i.imgur.com/LL6Jt1C.png)]()
+ [![N|Solid](https://i.imgur.com/ExUHQGj.jpg)]()
    
    This is the form where the user answers his questions. Every button represents one answer and by clicking on it you submit its value and get redirected back to the home page or to the end page deppeind on your situation.
 
@@ -189,3 +190,13 @@ Here the user has 3 options. On cliking exit he will exit the apllication. The '
  This is the endpage. Here the message output will differ depending on the state of the users game wether he has won it or not.
  
  [![N|Solid](https://i.imgur.com/VSSiIDf.png)]()
+ 
+ # Used Resources and Literature
+ - https://ezyfundraising.com/wp-content/uploads/2016/10/Trivia-Quiz-1.jpg
+- https://stackoverflow.com/questions/2163829/how-do-i-rotate-a-picture-in-winforms
+- https://opentdb.com/api_config.php
+- https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1365190/910/607/m1/fpnw/wm1/education_bg_cm-.jpg?1465913766&s=73bded9357ae5fc7f039f7f190e1c049
+- https://previews.123rf.com/images/tatishdesign/tatishdesign1506/tatishdesign150600061/41900220-hand-drawn-doodle-sport-background-vector-cartoon-pattern-with-sport-icons.jpg
+- https://st2.depositphotos.com/3580719/9494/v/950/depositphotos_94948944-stock-illustration-seamless-pattern-with-hand-drawn.jpg
+- http://chittagongit.com/icon/hearth-icon-25.html
+- https://pixabay.com/vectors/house-svg-vector-2374925/
