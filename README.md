@@ -103,8 +103,6 @@ Secondly we think we should explain the most complicated functions that are in t
 ```c$
 public Bitmap RotateImage(Bitmap b, float angle)
         {
-            MatrixOrder asd = new MatrixOrder();
-            
             Bitmap rotatedImage = new Bitmap(b.Width, b.Height);
             Graphics g = Graphics.FromImage(rotatedImage);
             g.InterpolationMode = InterpolationMode.High;
@@ -151,7 +149,7 @@ public void GetQuestion()
             }
             else if (CurrentCategory == "ComputerScience")
             {
-                Current = ComputerScienceQuestions[random.Next(PopcultureLeft)];
+                Current = ComputerScienceQuestions[random.Next(computerscienceLeft)];
                 ComputerScienceQuestions.Remove(Current);
                 computerscienceLeft--;
             }
