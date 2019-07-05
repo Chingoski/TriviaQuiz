@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 
-Trivia Quiz is a quiz game in which the player will be challenged to test his knowledge and memory in a fun an inovative way from questions that consist of five diverse subjects. 
+Trivia Quiz is a quiz game in which the player will be challenged to test his knowledge and memory in a fun and inovative way from questions that consist of five diverse subjects. 
 
 
 # Table of Contents  
@@ -25,7 +25,7 @@ We made this game beacause we are fans of both fun and challenging Trivia Quizes
 - Sports
 - Pop Culture
 
-to immerse and chalange the player at the same time. Because the oversaturation in this genre , we spent a lot of time planing and designing the game so it feels fresh and new , but as model we took [Trivia Crack](https://triviacrack.com/).
+to immerse and challenge the player at the same time. Because the oversaturation in this genre , we spent a lot of time planing and designing the game so it feels fresh and new , but as model we took [Trivia Crack](https://triviacrack.com/).
 
 # Technologies
 In order to make this game we taught the best platform was Microsoft's [Visual Studio 2019](https://visualstudio.microsoft.com/vs/), and as a programing language we chose [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)) because its the most supported and best optimized programing language for this platform. 
@@ -33,7 +33,7 @@ In order to make this game we taught the best platform was Microsoft's [Visual S
 - C# (pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines. It was developed around 2000 by Microsoft within its .NET initiative and later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2018). C# is one of the programming languages designed for the Common Language Infrastructure.
 
 # Object Classes
-Like every Trivia Quiz it consists of Questions and Answers. We designed our own classes so that the readbility and reusability of the code is at a high level.
+Like every Trivia Quiz it consists of Questions and Answers. We designed our own classes so that the readability and reusability of the code is at a high level.
 
 First of all here is the Question class: 
 ```c#
@@ -43,7 +43,7 @@ public class Question
         public Answer Answers { get; set; }
     }
 ```
-The first property 'QuestionName' is simply the Question and the second property 'Answers' is an Object from the follwoing Answer Class :
+The first property 'QuestionName' is simply the Question and the second property 'Answers' is an Object from the following Answer Class :
 ```c#
  public class Answer
     {
@@ -73,7 +73,7 @@ The first property 'QuestionName' is simply the Question and the second property
 In this class we store the correct answer in the 'CorrectAnswer' property and all other Answers in the 'AllAnswers' property. We provide a constructor and a 'Correct()' method. Because the base of our questions and answers are Notepad files and the correct answers are all marked with "(T)" it helps us sort and differenciate the correct from the wrong answers for a given question.
 
 # Functionality
-Every resource the apllication needs is stored in the '/Resources' directory in the same project directory. Most of the resources are images that we use such as background images , the wheel of questions and notpead files which serve as the base of our aplication. We use six Forms that are interconected in order to run this aplication. The starting form is 'TiviaHome.cs' which serves as a sort of home screen for the game. From there the user can access the 'Instrucionts.cs' form in which he can read all the necesary information about playing the game , or he can start a new game by accessing the 'TriviaNewGame.cs' form. This form is the 'brain' of the game because it is the form which contains all of the logic for this aplication.
+Every resource the apllication needs is stored in the '/Resources' directory in the same project directory. Most of the resources are images that we use such as background images , the wheel of questions and notepad files which serve as the base of our aplication. We use six Forms that are interconnected in order to run this aplication. The starting form is 'TiviaHome.cs' which serves as a sort of home screen for the game. From there the user can access the 'Instructions.cs' form in which he can read all the necessary information about playing the game , or he can start a new game by accessing the 'TriviaNewGame.cs' form. This form is the 'brain' of the game because it is the form which contains all of the logic for this aplication.
 
 First of all we have some global variables which need to be explained : 
 ```c#
@@ -113,7 +113,7 @@ public Bitmap RotateImage(Bitmap b, float angle)
             return rotatedImage;
         }
 ```
-We pass the wheel and create a bitmap from it , rotate it by the angle value and then return it to be redrawn on every timer tick. As stated there are five categories where you can get a question from , but we have 6 areas on the wheel. The sixst one is a joker field which opens the 'Joker.cs' from where the user can select the category from which he wants to answer a question.
+We pass the wheel and create a bitmap from it , rotate it by the angle value and then return it to be redrawn on every timer tick. As stated there are five categories where you can get a question from , but we have six areas on the wheel. The sixt one is a joker field which opens the 'Joker.cs' from where the user can select the category from which he wants to answer a question.
 
 ### Fetching a question 
 ```c#
@@ -166,13 +166,13 @@ public void GetQuestion()
             GetStatusOfGame();
         }
 ```
-After the spinning animation of the wheel has ended and the 'CurrentCategory' property is set, we check it's value and depending on that we fetch a Question by random that the user needs to answer. This seleceted question is passed onto the 'TriviaAnswerQuestion.cs' from where the user answers it and gets points or loses a live depending on his choice. After the game is finished depending on the outcome , win or lose the 'EndMessage.cs' from will open and print the correct outcome. After that the user gets redirected to the home section ('TriviaHome.cs') where he can make his decision whether he chooses to play another round or quit the aplication.
+After the spinning animation of the wheel has ended and the 'CurrentCategory' property is set, we check it's value and depending on that we fetch a Question by random that the user needs to answer. This seleceted question is passed onto the 'TriviaAnswerQuestion.cs' from where the user answers it and gets points or loses a life depending on his choice. After the game is finished depending on the outcome , win or lose the 'EndMessage.cs' form will open and print the correct outcome. After that the user gets redirected to the home section ('TriviaHome.cs'), where he can make his decision whether he chooses to play another round or quit the application.
 
 # Instructions
 First of all after the user starts the aplication he will be redirected to this screen.
 [![N|Solid](https://i.imgur.com/Xy0dxQ2.png)]()
 
-Here the user has 3 options. On cliking exit he will exit the apllication. The 'Instructions' button will redirect the user to the instructions window if he wishes to learn the rules of the game. The user can read all of the game rules and informations on this window.
+Here the user has 3 options. On clicking exit he will exit the application. The 'Instructions' button will redirect the user to the instructions window if he wishes to learn the rules of the game. The user can read all of the game rules and informations on this window.
 
  [![N|Solid](https://i.imgur.com/tCZPFz5.jpg)]()
 
