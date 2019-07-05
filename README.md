@@ -171,3 +171,20 @@ public void GetQuestion()
 After the spinning animation of the wheel has ended and the 'CurrentCategory' property is set, we check it's value and depending on that we fetch a Question by random that the user needs to answer. This seleceted question is passed onto the 'TriviaAnswerQuestion.cs' from where the user answers it and gets points or loses a live depending on his choice. After the game is finished depending on the outcome , win or lose you the 'EndMessage.cs' from will open and print the correct outcome. After that you get redirected to the home section ('TriviaHome.cs') where the user can make his decision whether he chooses to play another round or quit the aplication.
 
 # Instructions
+First of all after the user starts the aplication he will be redirected to this screen.
+[![N|Solid](https://i.imgur.com/Xy0dxQ2.png)]()
+
+Here the user has 3 options. On cliking exit he will exit the apllication. The 'Instructions' button will redirect the user to the instructions window if he wishes to learn the rules of the game. The user can read all of the game rules and informations on this window.
+ [![N|Solid](https://i.imgur.com/IRgxPL6.png)]()
+
+ Or if the user chooses to start a new game he will be redirected to this window. In the center of the screen we have the wheel , on the far right corner the ammount of points and on the far left we have the number of remaining lives. After clicking on Rotate the wheel will spin and after the annimation stops you will be redirected to one of the 6 possible outcomes. 1 is a joker where you select your prefferd question category and the other one is a form where you will answer a question.
+  
+ [![N|Solid](https://i.imgur.com/LL6Jt1C.png)]()
+   
+   This is the form where the user answers his questions. Every button represents one answer and by clicking on it you submit its value and get redirected back to the home page or to the end page deppeind on your situation.
+
+ [![N|Solid](https://i.imgur.com/LL6Jt1C.png)]()
+
+ This is the endpage. Here the message output will differ depending on the state of the users game wether he has won it or not.
+ 
+ [![N|Solid](https://i.imgur.com/VSSiIDf.png)]()
