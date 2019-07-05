@@ -73,7 +73,7 @@ The first property 'QuestionName' is simply the Question and the second property
 In this class we store the correct answer in the 'CorrectAnswer' property and all other Answers in the 'AllAnswers' property. We provide a constructor and a 'Correct()' method. Because the base of our questions and answers are Notepad files and the correct answers are all marked with "(T)" it helps us sort and differenciate the correct from the wrong answers for a given question.
 
 # Functionality
-Every resource the apllication needs is stored in the '/Resources' directory in the same project directory. Most of the resources are images that we use suchs as background images , the wheel of questuins and notpead files which serve as the base of our aplication. We use 6 Forms that are interconected in order to run this aplication. The starting form is 'TiviaHome.cs' which serves as a sort of home screen for the game. From there the user can access the 'Instrucionts.cs' form in which he can read all the necesary information about playing the game , or he can start a new game by accessing the 'TriviaNewGame.cs' form. This form is the 'brain' of the game because it is the form which contains all of the logic for this aplication.
+Every resource the apllication needs is stored in the '/Resources' directory in the same project directory. Most of the resources are images that we use such as background images , the wheel of questions and notpead files which serve as the base of our aplication. We use six Forms that are interconected in order to run this aplication. The starting form is 'TiviaHome.cs' which serves as a sort of home screen for the game. From there the user can access the 'Instrucionts.cs' form in which he can read all the necesary information about playing the game , or he can start a new game by accessing the 'TriviaNewGame.cs' form. This form is the 'brain' of the game because it is the form which contains all of the logic for this aplication.
 
 First of all we have some global variables which need to be explained : 
 ```c#
@@ -100,9 +100,9 @@ First of all we have some global variables which need to be explained :
 Secondly we think we should explain the most complicated functions that are in this form which are :
 
 #### Rotation
-```c$
+```c#
 public Bitmap RotateImage(Bitmap b, float angle)
-        {
+        {    
             Bitmap rotatedImage = new Bitmap(b.Width, b.Height);
             Graphics g = Graphics.FromImage(rotatedImage);
             g.InterpolationMode = InterpolationMode.High;
@@ -111,10 +111,9 @@ public Bitmap RotateImage(Bitmap b, float angle)
             g.TranslateTransform(-(float)b.Width / 2, -(float)b.Height / 2);
             g.DrawImage(b, 0, 0, b.Width, b.Height);
             return rotatedImage;
-
         }
 ```
-We pass the wheel create a bitmap from it , rotate it by the angle value and then return it to be redrawn on every timer tick. As stated there are five categories where you can get a question from , but we have 6 areas on the wheel. The sixst one is a joker field which opens the 'Joker.cs' from where the user can select the category from which he wants to answer a question.
+We pass the wheel and create a bitmap from it , rotate it by the angle value and then return it to be redrawn on every timer tick. As stated there are five categories where you can get a question from , but we have 6 areas on the wheel. The sixst one is a joker field which opens the 'Joker.cs' from where the user can select the category from which he wants to answer a question.
 
 ### Fetching a question 
 ```c#
@@ -167,7 +166,7 @@ public void GetQuestion()
             GetStatusOfGame();
         }
 ```
-After the spinning animation of the wheel has ended and the 'CurrentCategory' property is set, we check it's value and depending on that we fetch a Question by random that the user needs to answer. This seleceted question is passed onto the 'TriviaAnswerQuestion.cs' from where the user answers it and gets points or loses a live depending on his choice. After the game is finished depending on the outcome , win or lose you the 'EndMessage.cs' from will open and print the correct outcome. After that you get redirected to the home section ('TriviaHome.cs') where the user can make his decision whether he chooses to play another round or quit the aplication.
+After the spinning animation of the wheel has ended and the 'CurrentCategory' property is set, we check it's value and depending on that we fetch a Question by random that the user needs to answer. This seleceted question is passed onto the 'TriviaAnswerQuestion.cs' from where the user answers it and gets points or loses a live depending on his choice. After the game is finished depending on the outcome , win or lose the 'EndMessage.cs' from will open and print the correct outcome. After that the user gets redirected to the home section ('TriviaHome.cs') where he can make his decision whether he chooses to play another round or quit the aplication.
 
 # Instructions
 First of all after the user starts the aplication he will be redirected to this screen.
@@ -175,17 +174,17 @@ First of all after the user starts the aplication he will be redirected to this 
 
 Here the user has 3 options. On cliking exit he will exit the apllication. The 'Instructions' button will redirect the user to the instructions window if he wishes to learn the rules of the game. The user can read all of the game rules and informations on this window.
 
- [![N|Solid](https://i.imgur.com/IRgxPL6.png)]()
+ [![N|Solid](https://i.imgur.com/tCZPFz5.jpg)]()
 
- Or if the user chooses to start a new game he will be redirected to this window. In the center of the screen we have the wheel , on the far right corner the ammount of points and on the far left we have the number of remaining lives. After clicking on Rotate the wheel will spin and after the annimation stops you will be redirected to one of the 6 possible outcomes. 1 is a joker where you select your prefferd question category and the other one is a form where you will answer a question.
+ Or if the user chooses to start a new game he will be redirected to this window. The goal of the game is to get 30 questions corectly. In the center of the screen we have the wheel , on the far right corner the ammount of points and on the far left we have the number of remaining lives. After clicking on Rotate the wheel will spin and after the annimation stops you will be redirected to one of the 6 possible outcomes. One of them is a joker where you select your prefferd question category and the every other outcome is a form where you will answer a question. If the users clicks on restart he forfits the game and gets redirected to the home screen.
   
  [![N|Solid](https://i.imgur.com/ExUHQGj.jpg)]()
    
-   This is the form where the user answers his questions. Every button represents one answer and by clicking on it you submit its value and get redirected back to the home page or to the end page deppeind on your situation.
+   This is the form where the user answers his questions. Every button represents one answer and by clicking on it he submit its value and gets redirected back to the home page or to the end page depending on his situation. After being redirected the game makes calculations depending on the submited value and allows the user to spin the wheel again.
 
  [![N|Solid](https://i.imgur.com/LL6Jt1C.png)]()
 
- This is the endpage. Here the message output will differ depending on the state of the users game wether he has won it or not.
+ This is the endpage. Here the message output will differ depending on the state of the users game wether he has won it or not. After pressing the home button you will be redirected to the first srceen where you can choose if you want to continue playing or exit.
  
  [![N|Solid](https://i.imgur.com/VSSiIDf.png)]()
  
