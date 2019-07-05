@@ -188,4 +188,4 @@ Here the user has 3 options. On cliking exit he will exit the apllication. The '
 
  This is the endpage. Here the message output will differ depending on the state of the users game wether he has won it or not.
  
- [![N|Solid](https://i.imgur.com/VSSiIDf.png)]()
+ [![N|Solid](https://i.imgur.com/4HPMq65.png)]()
