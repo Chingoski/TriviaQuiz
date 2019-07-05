@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>Test your knowledge. After clicking on new game, you will start your journey. After spinning the wheel you will be given a question from one of the four subjects. The rules are simple: You have 3 lives, if your answer is incorrect, you lose a life or else you get a point. By answering 30 questions correctly, you achieved the status of Albert Einstein. </value>
+    <value>Test your knowledge. After clicking on new game, you will start your journey. After spinning the wheel you will be given a question from one of the five subjects, or will be redirected to a joker page where you can select the question category. The rules are simple: You have 3 lives, if your answer is incorrect, you lose a life or else you get a point. By answering 30 questions correctly, you achieved the status of Albert Einstein. </value>
   </data>
 </root>

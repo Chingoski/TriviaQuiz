@@ -159,6 +159,8 @@ namespace TriviaQuiz
             label4.Text = Points.ToString();
             CheckLives();
             GetStatusOfGame();
+            btnNewGame.Enabled = true;
+            btnRotate.Enabled = true;
         }
 
         public void CheckLives()
@@ -199,6 +201,7 @@ namespace TriviaQuiz
             timerValue = random.Next(10,80);
             timerSlow = (int)(timerValue / 1.3);
             timerRotate.Enabled = true;
+
         }
 
         public Bitmap RotateImage(Bitmap b, float angle)
@@ -219,6 +222,7 @@ namespace TriviaQuiz
         private void timer1_Tick(object sender, EventArgs e)
         {
             btnNewGame.Enabled = false;
+            btnRotate.Enabled = false;
             timerValue--;
             if (timerValue <= 0)
             {
