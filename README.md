@@ -175,6 +175,7 @@ First of all after the user starts the aplication he will be redirected to this 
 [![N|Solid](https://i.imgur.com/Xy0dxQ2.png)]()
 
 Here the user has 3 options. On cliking exit he will exit the apllication. The 'Instructions' button will redirect the user to the instructions window if he wishes to learn the rules of the game. The user can read all of the game rules and informations on this window.
+
  [![N|Solid](https://i.imgur.com/IRgxPL6.png)]()
 
  Or if the user chooses to start a new game he will be redirected to this window. In the center of the screen we have the wheel , on the far right corner the ammount of points and on the far left we have the number of remaining lives. After clicking on Rotate the wheel will spin and after the annimation stops you will be redirected to one of the 6 possible outcomes. 1 is a joker where you select your prefferd question category and the other one is a form where you will answer a question.
