@@ -194,5 +194,14 @@
   <ItemGroup>
     <None Include="Resources\iStock-636447976.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60degColorWheel_IconsFixed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60degColorWheel_IconsFixed_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WheelFINAL.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -46,5 +46,15 @@ namespace TriviaQuiz
         {
             SetCategory("ComputerScience");
         }
+
+        private void BtnGeography_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void BtnGeography_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
+        }
     }
 }

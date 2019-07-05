@@ -23,7 +23,7 @@ namespace TriviaQuiz
             {
                 if (AllAnswers[i].Contains("(T)"))
                 {
-                    var tmp = AllAnswers[i].Substring(0, AllAnswers[i].Length - 3);
+                    var tmp = AllAnswers[i].Substring(0, AllAnswers[i].Length - 4);
                     AllAnswers[i] = tmp;
                     CorrectAnswer = tmp;
                     return;

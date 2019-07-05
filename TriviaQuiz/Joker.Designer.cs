@@ -47,6 +47,8 @@
             this.btnGeography.Text = "Geography";
             this.btnGeography.UseVisualStyleBackColor = true;
             this.btnGeography.Click += new System.EventHandler(this.BtnGeography_Click);
+            this.btnGeography.MouseEnter += new System.EventHandler(this.BtnGeography_MouseEnter);
+            this.btnGeography.MouseLeave += new System.EventHandler(this.BtnGeography_MouseLeave);
             // 
             // btnScience
             // 
@@ -60,6 +62,8 @@
             this.btnScience.Text = "Science";
             this.btnScience.UseVisualStyleBackColor = true;
             this.btnScience.Click += new System.EventHandler(this.BtnScience_Click);
+            this.btnScience.MouseEnter += new System.EventHandler(this.BtnGeography_MouseEnter);
+            this.btnScience.MouseLeave += new System.EventHandler(this.BtnGeography_MouseLeave);
             // 
             // btnHistory
             // 
@@ -73,6 +77,8 @@
             this.btnHistory.Text = "Computer Science";
             this.btnHistory.UseVisualStyleBackColor = true;
             this.btnHistory.Click += new System.EventHandler(this.BtnHistory_Click);
+            this.btnHistory.MouseEnter += new System.EventHandler(this.BtnGeography_MouseEnter);
+            this.btnHistory.MouseLeave += new System.EventHandler(this.BtnGeography_MouseLeave);
             // 
             // btnPopCulture
             // 
@@ -86,6 +92,8 @@
             this.btnPopCulture.Text = "Pop Culture";
             this.btnPopCulture.UseVisualStyleBackColor = true;
             this.btnPopCulture.Click += new System.EventHandler(this.BtnPopCulture_Click);
+            this.btnPopCulture.MouseEnter += new System.EventHandler(this.BtnGeography_MouseEnter);
+            this.btnPopCulture.MouseLeave += new System.EventHandler(this.BtnGeography_MouseLeave);
             // 
             // btnSport
             // 
@@ -99,6 +107,8 @@
             this.btnSport.Text = "Sport";
             this.btnSport.UseVisualStyleBackColor = true;
             this.btnSport.Click += new System.EventHandler(this.BtnSport_Click);
+            this.btnSport.MouseEnter += new System.EventHandler(this.BtnGeography_MouseEnter);
+            this.btnSport.MouseLeave += new System.EventHandler(this.BtnGeography_MouseLeave);
             // 
             // Joker
             // 

@@ -26,8 +26,8 @@ namespace TriviaQuiz
         private int GeograpyLeft;
         private int SportsLeft;
         private int ScienceLeft;
-        private int PopcultureLeft;
-        private int computerscienceLeft;
+        private int PopCultureLeft;
+        private int ComputerScienceLeft;
         public static Question Current;
         public static string CurrentCategory;
         private static Random random;
@@ -36,7 +36,7 @@ namespace TriviaQuiz
         private int timerValue;
         private int timerSlow;
         private float angle;
-        private int circlePosition;
+        private float circlePosition;
 
         public TriviaNewGame()
         {
@@ -45,7 +45,7 @@ namespace TriviaQuiz
             NewGame();
         }
 
-        public void FillQuestions(string QuestionsLocation , string AnswerLocation, string tema)
+        public void FillQuestions(string QuestionsLocation, string AnswerLocation, string tema)
         {
             int answerIndex = 0;
             string[] questions = QuestionsLocation.Split(new []{'\n'}, StringSplitOptions.RemoveEmptyEntries);
@@ -100,10 +100,10 @@ namespace TriviaQuiz
             GeograpyLeft = 30;
             SportsLeft = 30;
             ScienceLeft = 30;
-            PopcultureLeft = 30;
-            computerscienceLeft= 30;
+            PopCultureLeft = 30;
+            ComputerScienceLeft = 30;
             random = new Random();
-            FillQuestions(Resources.Geography_Questions , Resources.Geography_Anwsers, "Geography");
+            FillQuestions(Resources.Geography_Questions, Resources.Geography_Anwsers, "Geography");
             FillQuestions(Resources.PopCultureQuestions, Resources.PopCultureAnswers, "PopCulture");
             FillQuestions(Resources.Science_Questions, Resources.Science_Anwsers, "Science");
             FillQuestions(Resources.SportsQuestions, Resources.SportsAnwsers, "Sports");
@@ -137,16 +137,18 @@ namespace TriviaQuiz
 
             else if (CurrentCategory == "PopCulture")
             {
-                Current = PopCultureQuestions[random.Next(PopcultureLeft)];
+                Current = PopCultureQuestions[random.Next(PopCultureLeft)];
                 PopCultureQuestions.Remove(Current);
-                PopcultureLeft--;
+                PopCultureLeft--;
             }
+
             else if (CurrentCategory == "ComputerScience")
             {
-                Current = ComputerScienceQuestions[random.Next(PopcultureLeft)];
+                Current = ComputerScienceQuestions[random.Next(ComputerScienceLeft)];
                 ComputerScienceQuestions.Remove(Current);
-                computerscienceLeft--;
+                ComputerScienceLeft--;
             }
+
             this.Hide();
             TriviaAnwserQuestion form = new TriviaAnwserQuestion();
             while (form.ShowDialog() != DialogResult.Cancel)
@@ -172,6 +174,7 @@ namespace TriviaQuiz
             if (Lives == 0)
                 lives1.Image = null;
         }
+
         public void GetStatusOfGame()
         {
             if (Points == 30)
@@ -198,16 +201,14 @@ namespace TriviaQuiz
 
         private void btnRotate_Click(object sender, EventArgs e)
         {
-            timerValue = random.Next(10,80);
+//            timerValue = 50;
+            timerValue = random.Next(10, 80);
             timerSlow = (int)(timerValue / 1.3);
             timerRotate.Enabled = true;
-
         }
 
         public Bitmap RotateImage(Bitmap b, float angle)
         {
-            MatrixOrder asd = new MatrixOrder();
-            
             Bitmap rotatedImage = new Bitmap(b.Width, b.Height);
             Graphics g = Graphics.FromImage(rotatedImage);
             g.InterpolationMode = InterpolationMode.High;
@@ -216,7 +217,6 @@ namespace TriviaQuiz
             g.TranslateTransform(-(float)b.Width / 2, -(float)b.Height / 2);
             g.DrawImage(b, 0, 0, b.Width, b.Height);
             return rotatedImage;
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -233,74 +233,74 @@ namespace TriviaQuiz
             {
                 angle /= (float)1.3;
             }
-            circlePosition += (int)angle;
+
+            circlePosition += angle;
+
             using (Bitmap b = new Bitmap(pictureBox1.Image))
+            {
+                Bitmap newBmp = RotateImage(b, angle);
+                pictureBox1.Image = newBmp;
+            }
+
+            if (!timerRotate.Enabled)
+            {
+                circlePosition %= 360;
+
+                if (circlePosition >= 0 && circlePosition < 60)
                 {
-                    Bitmap newBmp = RotateImage(b, angle);
-                    pictureBox1.Image = newBmp;
+                    CurrentCategory = "PopCulture";
+                    GetQuestion();
+                    resetWheel();
                 }
 
-                if (!timerRotate.Enabled)
-                {
-                    circlePosition %= 360;
-                    if (circlePosition >= 0 && circlePosition < 60)
-                    {
-                        CurrentCategory = "Geography";
-                    GetQuestion();
-                    resetWheel();
-                 }
-                   
                 else if (circlePosition >= 60 && circlePosition < 120)
                 {
-                   
-                    CurrentCategory = "Science";
+                    CurrentCategory = "Geography";
                     GetQuestion();
                     resetWheel();
                 }
-                    
+
                 else if (circlePosition >= 120 && circlePosition < 180)
                 {
-                  
-                    CurrentCategory = "Sports";
+                    CurrentCategory = "Science";
                     GetQuestion();
                     resetWheel();
                 }
 
                 else if (circlePosition >= 180 && circlePosition < 240)
                 {
-                    
-                    CurrentCategory = "PopCulture";
+                    CurrentCategory = "Sports";
                     GetQuestion();
                     resetWheel();
                 }
-                    else if (circlePosition >= 240 && circlePosition < 300)
+
+                else if (circlePosition >= 240 && circlePosition < 300)
+                {
+                    CurrentCategory = "ComputerScience";
+                    GetQuestion();
+                    resetWheel();
+                }
+
+                else if (circlePosition >= 300 && circlePosition < 360)
+                {
+                    Form jokerForm = new Joker();
+                    this.Hide();
+                    while (jokerForm.ShowDialog() != DialogResult.Cancel)
                     {
 
-                        CurrentCategory = "ComputerScience";
-                        GetQuestion();
-                        resetWheel();
                     }
-                    else if (circlePosition >= 300 && circlePosition < 360)
-                    {
-                        Form jokerForm = new Joker();
-                        this.Hide();
-                        while (jokerForm.ShowDialog() != DialogResult.Cancel)
-                        {
-
-                        }
-                        GetQuestion();
-                        resetWheel();
-                    }
-
+                    GetQuestion();
+                    resetWheel();
+                }
             }
         }
 
         public void resetWheel()
         {
-            Bitmap rotatedImage = new Bitmap(Properties.Resources.Webp_net_resizeimage_FINAL);
+            Bitmap rotatedImage = new Bitmap(Properties.Resources.WheelFINAL);
             Graphics g = Graphics.FromImage(rotatedImage);
             pictureBox1.Image = rotatedImage;
-            angle = 20;
+            angle = 24;
             circlePosition = 0;
         }
 

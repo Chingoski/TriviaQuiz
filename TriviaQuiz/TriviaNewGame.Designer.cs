@@ -52,7 +52,7 @@
             this.btnNewGame.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnNewGame.Image = global::TriviaQuiz.Properties.Resources.board;
-            this.btnNewGame.Location = new System.Drawing.Point(470, 602);
+            this.btnNewGame.Location = new System.Drawing.Point(441, 602);
             this.btnNewGame.Name = "btnNewGame";
             this.btnNewGame.Size = new System.Drawing.Size(108, 40);
             this.btnNewGame.TabIndex = 5;
@@ -82,7 +82,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::TriviaQuiz.Properties.Resources.Webp_net_resizeimage_FINAL;
+            this.pictureBox1.Image = global::TriviaQuiz.Properties.Resources.WheelFINAL;
             this.pictureBox1.Location = new System.Drawing.Point(65, 84);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(512, 512);

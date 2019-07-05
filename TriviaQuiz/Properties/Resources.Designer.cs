@@ -535,5 +535,15 @@ namespace TriviaQuiz.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WheelFINAL {
+            get {
+                object obj = ResourceManager.GetObject("WheelFINAL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
